@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="css/stuck.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/touchTouch.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/script.js"></script> 
+<script src="js/superfish.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/tmStickUp.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/touchTouch.jquery.js"></script>
+
+<script>
+ $(document).ready(function(){
+
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});
+  $('.gallery .gall_item').touchTouch();
+
+  }); 
+</script>
+
+</head>
+
+<body class="page1" id="top">
+<script>
+  $(function(){
+  $("#ente").click(function(){
+
+    $("html,body").animate({scrollTop:700},2000);
+
+  });
+});
+</script>
+<style>
+  body{
+    /*background-color: white;*/
+  }
+  button#ente{
+    width: 100px;
+    height: 50px;
+  }
+  div#enter{
+    height:700px;
+    width: 100%;
+    background-color: white;
+  }
+  .logo{
+    width: 100%;
+    height: 120px;
+    float: left;
+    margin-left: 20px;
+  }
+  .gif{
+      padding-top: 50px;
+      padding-left: 275px;
+      float: left;
+      width: 100%;
+      height: 400px;
+    }
+  .enter_button{
+    padding-top: 550px;
+  }
+</style>
+  <div id="enter">
+    <div class="logo"><img src="logo.png" alt="the logo" width="120px" height="120px"></div>
+    <div class="gif"><iframe src="homepage/index.html" frameborder="0" scrolling="no" width="800px" height="100%"></iframe></div>
+    <div class="enter_button" align="center"><button id="ente"><h1>Enter</h1></button></div>
+  </div>
+<!--==============================
+              header
+=================================-->
+
+<!--==============================
+            Stuck menu
+=================================-->
+  <style>
+    div.navigation {
+      padding-top: 20px;
+    }
+    div.logo{
+      font-size: 40px;
+      font-family: fantasy;
+      width: 400px;
+      height: 40px;
+      margin-top: 20px;
+    }
+    header{
+      padding-top: 0px;
+    }
+    .sidebar1{
+      width: 100%;
+      height: 60px;
+    }
+    
+  </style>
+  <header>
+  <div class="sidebar1">
+    <section id="stuck_container">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <div class="logo"><a href="index.html">Yummy NTUST</a></div>
+          <div class="navigation">
+            <nav>
+              <ul class="sf-menu">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="index-1.html">Restaurant</a></li>
+               <li><a href="index-2.html">Stores</a></li>
+               <li><a href="index-3.html">Login</a></li>
+               <li><a href="index-4.html">contacts</a></li>
+             </ul>
+            </nav>        
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+  </div>
+  
+ </header>  
+
+<!--=====================
+          Content
+======================-->
+
+<style>
+  img.logo_second{
+    margin-top: 15px;
+  }
+  section.content{
+    padding-top: 20px;
+  }
+</style>
+<section class="content">
+  <div class="container">
+    <div class="row">
+      <div class="grid_4">
+        <div class="banner">
+          <div class="gall_block">
+            <div class="bann_capt ">
+              <div class="maxheight">
+                <img src="images/icon1.png" alt="">
+                <div class="bann_title">第一餐廳</div>
+                <a href="index-1">more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid_4">
+        <div class="banner">
+          <div class="gall_block">
+            <div class="bann_capt  bn__1 ">
+              <div class="maxheight">
+                <img src="images/icon1.png" alt="">
+                <div class="bann_title">第三餐廳</div>
+                <a href="index-1">more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid_4">
+        <div class="banner">
+          <div class="gall_block">
+            <div class="bann_capt  bn__2">
+              <div class="maxheight">
+                <img src="images/icon2.png" alt="">
+                <div class="bann_title">教職員餐廳</div>
+                <a href="#">more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid_4">
+        <div class="banner ">
+          <div class="gall_block">
+            <div class="bann_capt  bn__3">
+              <div class="maxheight">
+                <img src="images/icon3.png" alt="">
+                <div class="bann_title">小木屋</div>
+                <a href="#">more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="grid_4">
+        <div class="banner ">
+          <div class="gall_block">
+            <div class="bann_capt  bn__4">
+              <div class="maxheight">
+                <img src="images/icon3.png" alt="">
+                <div class="bann_title">摩斯漢堡</div>
+                <a href="#">more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="grid_4">
+        <div class="banner ">
+          <div class="gall_block">
+            <div class="bann_capt  bn__4">
+              <div class="maxheight">
+                <img class="logo_second" src="logo.png" alt="">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>     
+  </div>
+</section>
+<!--==============================
+              footer
+=================================-->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">  
+        <div class="socials">
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-google-plus"></a>
+          <a href="#" class="fa fa-pinterest"></a>
+        </div>
+        <div class="copyright"><span class="brand">Bliss </span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a> <div>Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a></div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</footer> 
+</body>
+</html>
+
