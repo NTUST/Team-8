@@ -101,6 +101,27 @@
       width: 100%;
       height: 60px;
     }
+    .sf-menu li:hover ul {       /*當滑鼠移到li時，ul會*/
+    display: block;         /*ul會顯示出來，即子選單區塊顯示出來*/
+    }
+
+  .sf-menu li.submeau li{
+    padding: 10px;
+    width: 120px;     /*各子選單連結的寬度*/
+    height: 30px;     /*各子選單連結的高度*/
+    text-align: center;
+    color: black;
+    font-size: large;
+    font-family: Microsoft JhengHei;
+    background-color: #f1f0f1;
+  }
+  .sf-meau li.submeau ul{
+    display: none;          /*展現方式為隱藏*/
+    position: absolute;      /*子選單的對齊方法為絕對方式*/
+    z-index: 999;            /*子選單的圖層層級為999，在最上方*/
+    background: #000;
+    margin-top: 0px;         /*子選單區塊與主連結的相對往下移點數*/
+  }
     
   </style>
   <header>
@@ -115,7 +136,14 @@
               <ul class="sf-menu">
                <li><a href="#">Home</a></li>
                <li class="current"><a href="#rest">Restaurant</a></li>
-               <li><a href="index-1.html">Stores</a></li>
+               <li class="submeau"><a href="">Stores</a>
+                  <ul>
+                    <a href="index-first.html"><li>第一餐廳</li></a>
+                    <a href="indext-third.html"><li>第三餐廳</li></a>
+                    <a href="index-teacher.html"><li>教職員餐廳</li></a>
+                    <a href="index-woodhouse.html"><li>小木屋</li></a>
+                    <a href=""><li>摩斯漢堡</li></a>
+                  </ul></li>
                <li><a href="#">Login</a></li>
                <li><a href="index-4.html">Contacts</a></li>
              </ul>
@@ -141,6 +169,9 @@
   section.content{
     padding-top: 20px;
   }
+  .bn__0{
+    background-color: #9DDF77;
+  }
 </style>
   <section class ="content" id="rest">
   <div class="container">
@@ -148,11 +179,14 @@
       <div class="grid_4">
         <div class="banner">
           <div class="gall_block">
-            <div class="bann_capt ">
+            <div class="bann_capt bn__0">
               <div class="maxheight">
+              <div id="w">
                 <img src="images/icon1.png" alt="">
                 <div class="bann_title">第一餐廳</div>
-                <a href="index-1">more</a>
+              </div>
+                
+                <a href="index-first.html">more</a>
               </div>
             </div>
           </div>
@@ -165,7 +199,7 @@
               <div class="maxheight">
                 <img src="images/icon1.png" alt="">
                 <div class="bann_title">第三餐廳</div>
-                <a href="index-1">more</a>
+                <a href="index-third.html">more</a>
               </div>
             </div>
           </div>
@@ -178,7 +212,7 @@
               <div class="maxheight">
                 <img src="images/icon2.png" alt="">
                 <div class="bann_title">教職員餐廳</div>
-                <a href="#">more</a>
+                <a href="index-teacher.html">more</a>
               </div>
             </div>
           </div>
@@ -187,33 +221,33 @@
       <div class="grid_4">
         <div class="banner ">
           <div class="gall_block">
-            <div class="bann_capt  bn__3">
+            <div class="bann_capt  bn__0">
               <div class="maxheight">
                 <img src="images/icon3.png" alt="">
                 <div class="bann_title">小木屋</div>
-                <a href="#">more</a>
+                <a href="index-woodhouse.html">more</a>
               </div>
             </div>
           </div>
         </div>
       </div> 
       <div class="grid_4">
-        <div class="banner ">
+        <div class="banner">
           <div class="gall_block">
-            <div class="bann_capt  bn__4">
+            <div class="bann_capt  bn__1 ">
               <div class="maxheight">
-                <img src="images/icon3.png" alt="">
+                <img src="images/icon1.png" alt="">
                 <div class="bann_title">摩斯漢堡</div>
-                <a href="#">more</a>
+                <a href="index-third.html">more</a>
               </div>
             </div>
           </div>
         </div>
-      </div> 
+      </div>
       <div class="grid_4">
         <div class="banner ">
           <div class="gall_block">
-            <div class="bann_capt  bn__4">
+            <div class="bann_capt  bn__2">
               <div class="maxheight">
                 <img class="logo_second" src="logo.png" alt="">
 
