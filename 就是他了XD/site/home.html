@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Yummy NTUST</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="css/stuck.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/touchTouch.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/script.js"></script> 
+<script src="js/superfish.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/tmStickUp.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/touchTouch.jquery.js"></script>
+
+<script>
+ $(document).ready(function(){
+
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});
+  $('.gallery .gall_item').touchTouch();
+
+  }); 
+</script>
+
+</head>
+
+<body class="page1" id="top">
+<script>
+  $(function(){
+  $("#ente").click(function(){
+
+    $("html,body").animate({scrollTop:700},2000);
+
+  });
+});
+</script>
+<!-- 側邊浮動欄 START -->
+<div id="MyBlog">
+<span id="title">熱門排行榜</span>
+       <li><a href="index-first.html">No1. 第一餐廳</a></li>
+       <li><a href="index-third.html">No2. 第三餐廳</a></li>
+       <li><a href="index-teacher.html">No3. 教職員工餐廳</a></li>
+
+</div>
+<!-- 側邊浮動欄 END -->
+<style>
+/*側邊浮動欄CSS START*/
+#MyBlog{
+    position: fixed;  /*固定在網頁上隨卷軸移動，若不要隨卷軸移動用absolute*/
+    top: 50%;  /*設置垂直位置*/
+    right: -100px;  /*設置水平位置，依所放的內容多寡需要自行手動調整*/
+    background: pink;  /*背景顏色*/
+    padding: 10px 20px;
+    border-radius: 10px;  /*圓角*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+#MyBlog:hover{  /*當滑鼠移至此區塊時，伸縮區塊*/
+    right: -10px;
+    color:black;
+}
+#MyBlog #title{
+    padding-right: 5px;  /*讓標題與連結中間有空隙*/
+}
+/*側邊浮動欄CSS END*/
+  body{
+    /*background-color: white;*/
+  }
+  button#ente{
+    height:95px;
+    width:120px;
+    border: none;
+  }
+  div#enter{
+    height:700px;
+    width: 100%;
+    background-color:  white;
+  }
+  .logo{
+    width: 100%;
+    height: 120px;
+    float: left;
+    margin-left: 20px;
+  }
+  .gif{
+      padding-top: 50px;
+      float: left;
+      width: 100%;
+      height: 400px;
+    }
+  .enter_button{
+    padding-top: 540px;
+  }
+</style>
+  <div id="enter">
+    <div class="logo"><img src="logo.png" alt="the logo" width="120px" height="120px"></div>
+    <div class="gif" align="center"><iframe src="homepage/index.html" frameborder="0" scrolling="no" width="800px" height="100%"></iframe></div>
+    <div class="enter_button" align="center"><width="1000px" height="80px"><button id="ente" style="background: url(enter.png)"no></button></div>
+  </div>
+<!--==============================
+              header
+=================================-->
+
+<!--==============================
+            Stuck menu
+=================================-->
+  <style>
+    div.navigation {
+      padding-top: 20px;
+    }
+    div.logo{
+      font-size: 40px;
+      font-weight: bold;
+      font-family: Chalkboard SE;
+      color: #46ADB0;
+      width: 400px;
+      height: 40px;
+      margin-top: 20px;
+    }
+    header{
+      padding-top: 0px;
+    }
+    .sidebar1{
+      width: 100%;
+      height: 60px;
+    }
+    .sf-menu li:hover ul {       /*當滑鼠移到li時，ul會*/
+    display: block;         /*ul會顯示出來，即子選單區塊顯示出來*/
+    }
+
+  .sf-menu li.submeau li{
+    padding: 10px;
+    width: 120px;     /*各子選單連結的寬度*/
+    height: 30px;     /*各子選單連結的高度*/
+    text-align: center;
+    color: black;
+    font-size: large;
+    font-family: Microsoft JhengHei;
+    background-color: #f1f0f1;
+  }
+  .sf-meau li.submeau ul{
+    display: none;          /*展現方式為隱藏*/
+    position: absolute;      /*子選單的對齊方法為絕對方式*/
+    z-index: 999;            /*子選單的圖層層級為999，在最上方*/
+    background: #000;
+    margin-top: 0px;         /*子選單區塊與主連結的相對往下移點數*/
+    margin-left: -20px;
+  }
+#stuck_container{
+  background-color: rgb(225,227,228);
+}
+  </style>
+  <header>
+  <div class="sidebar1">
+    <section id="stuck_container">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <div class="logo"><a href="#">Yummy NTUST</a></div>
+          <div class="navigation">
+            <nav>
+              <ul class="sf-menu">
+               <li><a href="#">Home</a></li>
+               <li class="current"><a href="#rest">Restaurant</a></li>
+               <li class="submeau"><a href="">Stores</a>
+                  <ul>
+                    <a href="index-first.html"><li>第一餐廳</li></a>
+                    <a href="indext-third.html"><li>第三餐廳</li></a>
+                    <a href="index-teacher.html"><li>教職員餐廳</li></a>
+                    <a href="index-woodhouse.html"><li>小木屋</li></a>
+                    <a href="http://www.mos.com.tw/"><li>摩斯漢堡</li></a>
+                  </ul>
+                </li>
+              <li><a href="index-contact.html">Contacts</a></li>
+            </ul>
+            </nav>        
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+  </div>
+  
+ </header>  
+
+<!--=====================
+          Content
+======================-->
+
+<style>
+  img.logo_second{
+    margin-top: 50px;
+  }
+  section.content{
+    padding-top: 20px;
+  }
+  .bn__0{
+    background-color: #A8E8C7;
+  }
+img.mos{
+    padding-top: 45px;
+    padding-bottom: 30px;
+}
+</style>
+
+  <section class ="content" id="rest">
+  <div class="container">
+    <div class="row">
+      <div class="grid_4">
+        <div class="banner">
+          <div class="gall_block">
+            <div class="bann_capt bn__0">
+              <div class="maxheight">
+              <div id="w">
+                <img src="images/icon1.png" alt="">
+                <div class="bann_title">第一餐廳</div>
+              </div>
+                
+                <a href="index-first.html">more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid_4">
+        <div class="banner">
+          <div class="gall_block">
+            <div class="bann_capt  bn__1 ">
+              <div class="maxheight">
+                <img src="images/icon1.png" alt="">
+                <div class="bann_title">第三餐廳</div>
+                <a href="index-third.html">more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid_4">
+        <div class="banner">
+          <div class="gall_block">
+            <div class="bann_capt  bn__2">
+              <div class="maxheight">
+                <img src="images/icon2.png" alt="">
+                <div class="bann_title">教職員餐廳</div>
+                <a href="index-teacher.html">more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid_4">
+        <div class="banner ">
+          <div class="gall_block">
+            <div class="bann_capt  bn__0">
+              <div class="maxheight">
+                <img src="images/icon3.png" alt="">
+                <div class="bann_title">小木屋</div>
+                <a href="index-woodhouse.html">more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="grid_4">
+        <div class="banner">
+          <div class="gall_block">
+            <div class="bann_capt  bn__1 ">
+              <div class="maxheight">
+                <img src="MOS_Burger.png" alt="" class="mos">
+                <div class="bann_title">摩斯漢堡</div>
+                <a href="http://www.mos.com.tw/">more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid_4">
+        <div class="banner ">
+          <div class="gall_block">
+            <div class="bann_capt  bn__2">
+              <div class="maxheight">
+                <img class="logo_second" src="logo_eat.png" alt="">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>     
+  </div>
+</section>
+
+
+<!--==============================
+              footer
+=================================-->
+<style>
+  #toTop{
+    left: 47%;
+  }
+</style>
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">  
+        <div class="socials">
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-google-plus"></a>
+          <a href="#" class="fa fa-pinterest"></a>
+        </div>
+        <div class="copyright"><span class="brand">Yummy NTUST</span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a> <div>Website designed by <a href="" rel="nofollow">TCP</a></div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</footer> 
+
+</body>
+</html>
+

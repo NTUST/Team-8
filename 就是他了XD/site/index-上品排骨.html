@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>上品排骨</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="booking/css/booking.css">
+<link rel="stylesheet" href="css/stuck.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/script.js"></script> 
+<script src="js/superfish.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/tmStickUp.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+    <script src="booking/js/booking.js"></script>
+
+<script>
+ $(document).ready(function(){
+
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});
+
+  }); 
+</script>
+<!--[if lt IE 9]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+
+
+<![endif]-->
+
+</head>
+
+<body>
+<!--==============================
+              header
+=================================-->
+ <style>
+ body{
+  background-color: white;
+ }
+    div.navigation {
+      padding-top: 20px;
+    }
+    div.logo{
+      font-size: 40px;
+      font-weight: bold;
+      font-family: Chalkboard SE;
+      color: #46ADB0;
+      height: 40px;
+      margin-top: 20px;
+      float: left;
+    }
+  header{
+    padding-top: 0px;
+  }
+  .sf-menu li:hover ul {       /*當滑鼠移到li時，ul會*/
+    display: block;         /*ul會顯示出來，即子選單區塊顯示出來*/
+    }
+
+  .sf-menu li#submeau li{
+    padding: 10px;
+    width: 120px;     /*各子選單連結的寬度*/
+    height: 30px;     /*各子選單連結的高度*/
+    text-align: center;
+    color: black;
+    font-size: large;
+    font-family: Microsoft JhengHei;
+    background-color: #f1f0f1;
+    opacity: 1.0;
+  }
+  .sf-meau li#submeau ul{
+    display: none;          /*展現方式為隱藏*/
+    position: absolute;      /*子選單的對齊方法為絕對方式*/
+    z-index: 999;            /*子選單的圖層層級為999，在最上方*/
+    background: #000;
+    margin-top: 0px;         /*子選單區塊與主連結的相對往下移點數*/
+  }  
+  </style>
+<header>
+<!--==============================
+            Stuck menu
+=================================-->
+  <section id="stuck_container">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <div class="logo"><a href="home.html">Yummy NTUST</a></div>
+          <div class="navigation ">
+            <nav>
+              <ul class="sf-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="home.html#rest">Restaurant</a></li>
+                <li class="current" id="submeau"><a href="#">Stores</a>
+                  <ul>
+                    <a href="#"><li class="current">第一餐廳</li></a>
+                    <a href="index-third.html"><li>第三餐廳</li></a>
+                    <a href="index-teacher.html"><li>教職員餐廳</li></a>
+                    <a href="index-woodhouse.html"><li>小木屋</li></a>
+                    <a href=""><li>摩斯漢堡</li></a>
+                  </ul>
+                </li>
+                <li><a href="index-4.html">Contacts</a></li>
+              </ul>
+            </nav>        
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+</header> 
+
+<!--=====================
+          Content
+======================-->
+<style>
+  .grid_8{
+      width: 600px;
+      height: 800px;
+      float: left;
+      position: relative;
+  }
+  .grid_4{
+    width: 560px;
+    margin-left: 10px;
+  }
+  .grid_8 h2{
+    margin-bottom: 20px;
+  }
+  .grid_4 h2{
+    padding-top: 38px;
+    padding-bottom: 20px;
+  }
+  .fleft{
+    float: left;
+    width: 200px;
+    height: 200px;
+    border: 0px;
+  }
+  .fleft:hover{
+    width: 500px;
+    height: 400px;
+  }
+  .meau{
+      float: left;
+      width: 300px;
+      height: 500px;
+    }
+    #menu01 {
+        width: 150px;
+        height: 30px;
+        text-align: center;
+        padding: 0;
+        margin-left: 20px;
+        background: #f1f0f1;
+    }
+    #menu01 ol, li, ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    #menu01 li.submenu {
+     /*   float: left; */           /*讓主標題連結變成水平狀*/
+        padding: 0;
+        margin: 0;
+        width: 150px;           /*各主標題連結的寬度*/
+        height: 30px;           /*各主標題連結的高度*/
+        text-align: center;
+        line-height:30px;
+        border:none;
+        border-style: ridge;
+        color: #ADBABD; /*菜單字色*/
+        font-size: large;
+    }
+    #menu01 li {
+        padding: 10px;
+        width: 160px;     /*各子選單連結的寬度*/
+        height: 30px;     /*各子選單連結的高度*/
+        text-align: left;
+        background-color: #f1f0f1;
+        border: 4px;
+        border-style: none;
+        font-size: smaller;
+    }
+    #menu01 li ul {
+        display: none;          /*展現方式為隱藏*/
+        position: absolute;      /*子選單的對齊方法為絕對方式*/
+        z-index: 999;            /*子選單的圖層層級為999，在最上方*/
+        background: #f1f0f1;
+        margin-top: -32px;         /*子選單區塊與主連結的相對往下移點數*/
+        margin-left: 50px;       /*子選單區塊與主連結的相對往右移點數*/
+    }
+    #menu01 li:hover ul {       /*當滑鼠移到li時，ul會*/
+        display: block;         /*ul會顯示出來，即子選單區塊顯示出來*/
+    }
+    #menu01 li:hover {          /*當滑鼠移到li時*/
+        background-color: white;
+        text-align: left;
+    }
+    #menu01 li li:hover  {          /*當滑鼠移到li裡的li時*/
+        background-color: white;
+        color: black;
+    }
+  .comment{
+    height: auto;
+    width: auto;
+  }
+   
+
+</style>
+
+<section class="content"><div class="ic">More Website Templates @ TemplateMonster.com - July 30, 2014!</div>
+  <div class="container">
+    <div class="row">
+      <div class="grid_8">
+        <h2>上品排骨</h2>
+        <img src="picture/11134342_1065802900103858_73785952_n.jpg" alt="" class="img_inner fleft inn__1">
+        <div class="meau">
+          <h2>菜單</h2>
+          <ol id="menu01">
+<li class="submenu"><a href="#">上品排骨</a>
+            <ul>
+<li>  營養菜飯     $40  </li>
+<li>  士林香腸飯     $50 </li>
+<li>  酥炸花枝飯     $50 </li>
+<li>  焢肉飯     $59 </li>
+<li>  蒲燒鯛魚飯     $59 </li>
+<li>  魚酥蝦捲飯     $59 </li>
+<li>  檸檬雞柳飯     $59 </li>
+<li>  日式鱈魚排飯     $59  </li>
+<li>  招牌三鮮飯     $65 </li>
+<li>  炸雞腿飯     $59  </li>
+<li>  卡拉雞腿飯     $65 </li>
+<li>  泰式椒麻雞飯     $65  </li>
+<li>  酥炸魷魚飯     $65 </li>
+<li>  起士火腿豬排飯     $59 </li>
+<li>  玫瑰雞腿飯     $69 </li>
+<li>  金黃香雞排飯     $69  </li>
+<li>  含香無骨雞排飯     $69 </li>
+<li>  里肌豬排飯(炸、滷、糖醋、黑胡椒)     $65 </li>
+<li>  牛肉燴飯(滑蛋/沙茶)     $80 </li>
+<li>  蝦仁燴飯     $80  </li>
+<li>  招牌雞柳飯     $59 </li>
+<li>  糖醋排骨飯     $65 </li>
+
+            </ul>
+      </li>
+          </ol>
+        </div>
+        
+      </div>
+<script>
+  function ShowValue(){
+    document.getElementById("name_w").innerHTML= "留言者：" + document.getElementById("name").value;
+    document.getElementById("email_w").innerHTML="Email：" +document.getElementById("email").value;
+    document.getElementById("message_w").innerHTML="評論：" +document.getElementById("message").value;
+    document.getElementById("comment_new").style.borderWidth = "medium";
+    document.getElementById("comment_new").style.borderStyle = "dashed";
+    document.getElementById("comment_new").style.borderTop = "0px";
+    document.getElementById("comment_new").style.padding = "10px";
+    document.getElementById("name").value=null;
+    document.getElementById("email").value=null;
+    document.getElementById("message").value=null;
+  }
+
+  function Clear(){
+    document.getElementById("name").value=null;
+    document.getElementById("email").value=null;
+    document.getElementById("message").value=null;
+  }
+</script>
+<style>
+  #bookingForm{
+    padding-top: 0px;
+  }
+  .comment{
+    border-width: medium;
+    border-style: dashed;
+    padding: 10px;
+    border-top: 0px;
+  }
+  .comment_first{
+    border-width: medium;
+    border-style: dashed;
+    padding: 10px;
+  }
+  .comment{
+    height: auto;
+    width: auto;
+  }
+</style>
+
+      <div class="grid_4">
+        <h2>留言板</h2>
+        <form id="bookingForm">
+
+          <div class="comment_first">
+              <p>留言者：黃曉名</p> 
+              <p>Email：q123456@gmail.com</p>
+              <p>評論：老闆親切東西好吃又平價!!~~</p>
+          </div>
+          <div class="comment">
+            <p>留言者：蔡伊琳</p> 
+            <p>Email：w123456@gmail.com</p>
+            <p>評論：推推~~</p>
+          </div>
+          <div id="comment_new">
+              <p id="name_w"></p> 
+              <p id="email_w"></p>
+              <p id="message_w"></p>
+          </div>
+          <div class="tmTextarea">
+            <strong class="dt">留言者：</strong>
+            <input type="text" id="name" placeHolder="Jone">
+            <strong class="dt">Email：</strong>
+            <input type="text" id="email" placeHolder="xxxxxxx@gmail.com">
+            <strong class="dt">評論：</strong>
+            <textarea name="Message" id="message" placeHolder="Message:"></textarea>
+          </div>
+          <div class="ta__right">
+          <a href="#" class="btn" onclick="Clear()">clear</a>
+          <a href="#" class="btn" onclick="ShowValue()">send</a>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  #toTop{
+    left: 47%;
+  }
+</style>
+<!--==============================
+              footer
+=================================-->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">  
+        <div class="socials">
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-google-plus"></a>
+          <a href="#" class="fa fa-pinterest"></a>
+        </div>
+        <div class="copyright"><span class="brand">Bliss </span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a> <div>Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a></div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</footer> 
+  <script>
+  $(function (){
+        $('#bookingForm').bookingForm({
+            ownerEmail: '#'
+        });
+    })
+    $(function() {
+   $('#bookingForm input, #bookingForm textarea').placeholder();
+  });
+    
+  </script>
+</body>
+</html>
+
